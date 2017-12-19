@@ -117,6 +117,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBAction func musicButtonPressed(_ sender: UIButton) {
         if musicPlayer.isPlaying{
             musicPlayer.pause()
+            sender.alpha = 0.2
         }
         else{
             musicPlayer.play()
